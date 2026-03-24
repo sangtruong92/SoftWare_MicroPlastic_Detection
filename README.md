@@ -1,4 +1,4 @@
-# Microplastic Analyzer Pro
+# Fluorescence-based-Microplastic-analyzer
 
 A Python application for detecting, analyzing, and classifying microplastic particles in microscopy images using computer vision and machine learning.
 
