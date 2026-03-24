@@ -47,7 +47,7 @@ Particles are classified into four categories based on morphometric parameters:
 
 ```bash
 # Clone or download the repository
-cd MircrosPlastic_Software
+cd Fluorescence-based-Microplastic-analyzer
 
 # Install dependencies
 pip install -r requirements.txt
