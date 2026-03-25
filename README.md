@@ -340,7 +340,7 @@ python main.py --quick-analyze image.jpg --output results.json
 - ~100-200 particles per second
 
 ### 2. Deep Analysis (Advanced)
-**Best for:** High-accuracy detection, detailed classification
+**Best for:** High-accuracy detection, detailed classification. It offers different agorithms with: Watershed Segmentation, Adaptive Analysis
 
 ```bash
 python main.py --deep-analyze image.jpg --output detailed_results.json
@@ -353,7 +353,7 @@ python main.py --deep-analyze image.jpg --output detailed_results.json
 - Shape classification (5 categories)
 - ~10-50 particles per second
 
-### 3. Watershed Segmentation
+### 2.1 Watershed Segmentation
 **Best for:** Touching/overlapping particles
 
 **Parameters:**
@@ -361,7 +361,7 @@ python main.py --deep-analyze image.jpg --output detailed_results.json
 - Slower processing
 - Higher accuracy for complex samples
 
-### 4. Adaptive Analysis
+### 2.2 Adaptive Analysis
 **Best for:** Variable illumination
 
 **Features:**
