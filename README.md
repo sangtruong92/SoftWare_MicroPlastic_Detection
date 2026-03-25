@@ -810,8 +810,7 @@ Contributions are welcome! Please:
 ---
 
 ## � Contributors
-
-- **Sang Truong** - contributor - [sangtruong92](https://github.com/sangtruong92)
+- **Sang Truong** - Contributor - [sangtruong92](https://github.com/sangtruong92)
 - **CV Son** - Contributor - cvson@utexas.edu
 
 ---
