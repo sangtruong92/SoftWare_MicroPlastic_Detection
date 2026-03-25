@@ -809,7 +809,14 @@ Contributions are welcome! Please:
 
 ---
 
-## 📄 License
+## � Contributors
+
+- **Sang Truong** - Project Lead - [sangtruong92](https://github.com/sangtruong92)
+- **CV Son** - Contributor - cvson@utexas.edu
+
+---
+
+## �📄 License
 
 This project is licensed under the MIT License - see LICENSE file for details.
 
