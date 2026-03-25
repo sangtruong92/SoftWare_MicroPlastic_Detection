@@ -353,7 +353,12 @@ python main.py --deep-analyze image.jpg --output detailed_results.json
 - Shape classification (5 categories)
 - ~10-50 particles per second
 
-### 2.1 Watershed Segmentation
+### 2.1 Advanced 
+-	Multi-channel RGB analysis
+-	Auto-detects background type (dark/white)
+-	Best for: Complex images with varying contrast, bright backgrounds
+
+### 2.2 Watershed Segmentation
 **Best for:** Touching/overlapping particles
 
 **Parameters:**
@@ -361,7 +366,7 @@ python main.py --deep-analyze image.jpg --output detailed_results.json
 - Slower processing
 - Higher accuracy for complex samples
 
-### 2.2 Adaptive Analysis
+### 2.3 Adaptive Analysis
 **Best for:** Variable illumination
 
 **Features:**
