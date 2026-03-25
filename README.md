@@ -811,7 +811,7 @@ Contributions are welcome! Please:
 
 ## � Contributors
 
-- **Sang Truong** - Project Lead - [sangtruong92](https://github.com/sangtruong92)
+- **Sang Truong** - contributor - [sangtruong92](https://github.com/sangtruong92)
 - **CV Son** - Contributor - cvson@utexas.edu
 
 ---
