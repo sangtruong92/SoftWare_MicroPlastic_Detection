@@ -72,7 +72,7 @@ Automatic classification into 5 morphometric categories:
 
 #### Step 1: Clone Repository
 ```powershell
-cd D:\software_project\Python_Project
+cd D:\
 git clone https://github.com/sangtruong92/SoftWare_MicroPlastic_Detection.git
 cd "Fluorescence-based Microplastic Analyzer"
 ```
