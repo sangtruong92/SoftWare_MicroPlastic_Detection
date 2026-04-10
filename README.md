@@ -40,6 +40,39 @@ Particles are classified into four categories based on morphometric parameters:
 - **Benchmark Reports:** HTML reports with precision, recall, F1-score
 - **Comparison Mode:** Side-by-side Quick vs Deep analysis
 - **Color Analysis:** HSV-based classification with fluorescent support
+- **Camera Calibration:** Convert pixel measurements to real-world micrometers
+
+### Camera Calibration & Size Measurement
+
+Calculate real-world particle sizes from camera images:
+
+```python
+from src.core.calibration import CameraCalibration
+
+# Calibrate with reference object (e.g., 100 μm bead)
+calib = CameraCalibration()
+calib.calibrate_from_reference(reference_size_um=100, measured_pixels=40)
+
+# Convert measurements
+diameter_um = calib.calculate_real_diameter(area_pixels=500)  # → 63.1 μm
+calib.save_calibration('calibration.json')
+```
+
+**GUI Features:**
+- **Interactive calibration dialog** - Input camera parameters or use reference object
+- **Real-time size conversion** - Results table shows Area (μm²), Diameter (μm)
+- **Size distribution graphs** - Visualize particle sizes in micrometers
+- **Size category analysis** - Automatic categorization (Nano, Micro, Macro)
+
+**Documentation:**
+- **[Quick Reference](docs/calibration_quick_reference.md)** - 3-step calibration guide
+- **[Complete Guide](docs/camera_calibration_guide.md)** - Comprehensive documentation
+- **[Tutorial](docs/calibration_tutorial.md)** - Step-by-step hands-on examples
+- **[Math Reference](docs/calibration_math_reference.md)** - Formulas and theory
+- **[GUI Guide](CALIBRATION_GUI_GUIDE.md)** - Interface usage
+- **[Size Visualization](SIZE_VISUALIZATION_GUIDE.md)** - Chart types and features
+
+See **[docs/README.md](docs/README.md)** for full documentation index.
 
 ## Quick Start
 
@@ -89,17 +122,24 @@ The software automatically detects dark backgrounds and optimizes thresholding.
 MircrosPlastic_Software/
 ├── main.py                 # Application entry point
 ├── requirements.txt        # Python dependencies
+├── calibration.json        # Camera calibration data (created after first calibration)
 ├── config/
 │   ├── constants.py        # Shape thresholds, color definitions
 │   └── settings.py         # Preprocessing parameters
 ├── src/
 │   ├── analysis/           # Quick and Deep analyzers
 │   ├── core/               # Image processing, shape analysis
+│   │   └── calibration.py  # Camera calibration module
 │   ├── data_generation/    # Synthetic image generator
 │   ├── gui/                # PyQt5 interface
 │   └── ml/                 # YOLO integration
 ├── models/                 # Pre-trained YOLO models
 ├── docs/                   # Documentation
+│   ├── README.md           # Documentation index
+│   ├── camera_calibration_guide.md
+│   ├── calibration_tutorial.md
+│   ├── calibration_quick_reference.md
+│   └── calibration_math_reference.md
 └── benchmark_results/      # Generated reports
 ```
 
